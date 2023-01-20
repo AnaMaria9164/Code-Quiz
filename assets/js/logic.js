@@ -46,7 +46,7 @@ getQuestion();
 
 function getQuestion(){
 let currentQuestion = questions[currentQuestionIndex];
-let titleElement = document.getElementById("questions-title");
+let titleElement = document.getElementById("question-title");
 titleElement.textContent = currentQuestion.title;
 choicesElement.innerHTML = "";
 currentQuestion.choices.forEach(function(choice, index){
