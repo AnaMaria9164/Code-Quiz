@@ -1,11 +1,11 @@
-function printHightScores(){
-let highScores = JSON.parse(localStorage.getItem("highscores")) ||[];
+function printHightScores() {
+let highScores = JSON.parse(localStorage.getItem("highscores")) || [];
 
 highScores.sort(function(a, b) {
     return b.score - a.score;
 })
 
-highScores.forEach(function(score){
+highScores.forEach(function(score) {
     let li = document.createElement("li");
     li.textContent = `${score.initials} - ${score.score}`
 

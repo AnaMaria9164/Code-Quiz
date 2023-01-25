@@ -103,7 +103,7 @@ if(initials !==""){
         initials: initials
     }
     highScores.push(newScore);
-    localStorage.setItem("highscore", JSON.stringify(highScores));
+    localStorage.setItem("highscores", JSON.stringify(highScores));
 
     window.location.href = "highscores.html";
 }
